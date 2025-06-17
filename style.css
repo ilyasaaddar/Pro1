@@ -1,0 +1,44 @@
+/*
+    style.css - Custom styles for the Make Money Online Landing Page.
+    This file is primarily used for importing fonts and defining custom keyframe animations
+    that are then applied via Tailwind CSS classes in index.html.
+*/
+
+/* Import Google Fonts - Inter is used as the primary font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+/* Apply a smooth scroll behavior for better user experience */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base body styles (font family is also defined in Tailwind config for consistency) */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Prevent horizontal scrolling on smaller screens due to responsive layouts */
+    overflow-x: hidden;
+}
+
+/* Custom CSS for Notification Popups */
+/* While animations are defined in Tailwind config's keyframes,
+   this provides a fallback or can be used for direct application
+   if needed, though Tailwind's animation utility classes are preferred. */
+
+/* Basic styling for the notification popups.
+   The animation properties are applied via Tailwind classes directly in HTML. */
+.notification {
+    /* Initial state for slide-in animation, though Tailwind's `opacity-0` and `animate-slideIn` handle this */
+    transform: translateX(100%);
+    opacity: 0;
+    /* Ensure smooth transitions for any non-animated properties */
+    transition: all 0.5s ease-out;
+}
+
+/*
+    Note: The actual animation keyframes (slideIn, slideOut, fadeIn) are defined
+    within the <script> tag in index.html inside the `tailwind.config` block.
+    This allows them to be directly consumed by Tailwind's `animate-{name}` classes.
+    If they were solely in this CSS file, they would need explicit class applications
+    or JavaScript manipulation to apply/remove them. Sticking to Tailwind's
+    animation utilities for cleaner HTML.
+*/
