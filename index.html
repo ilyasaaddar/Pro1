@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title with Website Name -->
+    <title>ilyas aaddar - Unlock Your Earning Potential - Start Today!</title>
+    <!-- Link to custom styles (for specific animations/overrides) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for utility-first styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind CSS configuration for custom colors and font family
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#3B82F6',       // A vibrant, clear blue
+                        'secondary-teal': '#2DD4BF',     // A refreshing teal
+                        'accent-purple': '#A78BFA',      // A soft, inviting purple
+                        'bg-light': '#F8FAFC',           // Light background for sections
+                        'text-dark': '#1F2937',          // Dark text for contrast
+                        'text-muted': '#6B7280',         // Muted text for descriptions
+                        'cta-hover-blue': '#2563EB',     // Darker blue for CTA hover
+                        'cta-hover-teal': '#14B8A6',     // Darker teal for CTA hover
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'], // Define Inter font family
+                    },
+                    keyframes: {
+                        // Keyframes for the popup slide-in animation
+                        slideIn: {
+                            '0%': { transform: 'translateX(100%)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        // Keyframes for the popup slide-out animation
+                        slideOut: {
+                            '0%': { transform: 'translateX(0)', opacity: '1' },
+                            '100%': { transform: 'translateX(100%)', opacity: '0' },
+                        },
+                        // Keyframes for a subtle fade-in animation
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        // Keyframes for loading spinner rotation
+                        spin: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' },
+                        }
+                    },
+                    animation: {
+                        // Apply custom animations using Tailwind's animation utility
+                        slideIn: 'slideIn 0.5s ease-out forwards',
+                        slideOut: 'slideOut 0.5s ease-in forwards',
+                        fadeIn: 'fadeIn 0.8s ease-out forwards',
+                        spin: 'spin 1s linear infinite', // Apply spin animation
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter antialiased text-text-dark bg-bg-light">
+
+    <!-- Header / Hero Section -->
+    <header class="relative bg-gradient-to-br from-primary-blue to-accent-purple py-20 md:py-32 overflow-hidden rounded-b-3xl shadow-xl">
+        <div class="container mx-auto px-6 text-center text-white relative z-10 animate-fadeIn">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                Unlock Your Earning Potential <br class="hidden md:inline">From Anywhere.
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl font-light mb-8 max-w-3xl mx-auto opacity-90">
+                Discover the simple, proven system that allows individuals in Tier-1 countries to generate consistent income online, effortlessly.
+            </p>
+            <a href="https://areyourealhuman.com/cl/i/kldnoq" class="inline-block bg-secondary-teal text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-cta-hover-teal transition duration-300 ease-in-out transform hover:scale-105">
+                Start Earning Now!
+            </a>
+        </div>
+        <!-- Abstract shapes for background visual appeal -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute -top-1/4 -left-1/4 w-96 h-96 bg-white opacity-5 rounded-full filter blur-3xl"></div>
+            <div class="absolute -bottom-1/4 -right-1/4 w-80 h-80 bg-white opacity-5 rounded-full filter blur-3xl"></div>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-text-dark mb-12">
+                How Our Simple System Works
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center p-6 bg-bg-light rounded-xl shadow-sm hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-primary-blue text-white rounded-full flex items-center justify-center mb-6 shadow-md">
+                        <!-- SVG Icon for Setup -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings">
+                            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l-.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-dark mb-3">1. Easy Setup</h3>
+                    <p class="text-text-muted leading-relaxed">
+                        Follow our straightforward instructions to get your system ready in minutes. No prior technical skills required.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center p-6 bg-bg-light rounded-xl shadow-sm hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-secondary-teal text-white rounded-full flex items-center justify-center mb-6 shadow-md">
+                        <!-- SVG Icon for Automation -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap">
+                            <path d="M4 14a1 1 0 0 1-.78-1.63L15.6 6.37a1 1 0 0 1 1.78.63L8.4 17.63a1 1 0 0 1-1.78-.63L4 14z"/>
+                            <path d="M12 2v6h2V2h-2zM4 12h6v2H4v-2zM18 12h-6v2h6v-2zM12 20v-6h2v6h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-dark mb-3">2. Smart Automation</h3>
+                    <p class="text-text-muted leading-relaxed">
+                        Our intelligent system automates key processes, working tirelessly behind the scenes so you don't have to.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center p-6 bg-bg-light rounded-xl shadow-sm hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-20 h-20 bg-accent-purple text-white rounded-full flex items-center justify-center mb-6 shadow-md">
+                        <!-- SVG Icon for Earnings -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-dark mb-3">3. Watch Your Earnings Grow</h3>
+                    <p class="text-text-muted leading-relaxed">
+                        Monitor your progress and enjoy the financial rewards as your automated system generates income daily.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI-Powered Personalized Tip Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-secondary-teal to-accent-purple mx-4 md:mx-auto mt-8 max-w-6xl rounded-xl shadow-xl text-center text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                ✨ Get Your Personalized Earning Tip! ✨
+            </h2>
+            <p class="text-lg sm:text-xl font-light mb-8 max-w-3xl mx-auto opacity-90">
+                Tell us a little about your interests or how much time you have, and our AI will suggest a tailored earning tip.
+            </p>
+            <textarea
+                id="earning-tip-input"
+                class="w-full md:w-3/4 p-4 rounded-lg bg-white bg-opacity-90 text-text-dark placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary-blue mb-6 resize-y min-h-[100px]"
+                placeholder="E.g., 'I enjoy writing and have 2 hours a day', or 'I want something flexible around my main job'..."
+            ></textarea>
+            <button
+                id="generate-tip-btn"
+                class="inline-block bg-primary-blue text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-cta-hover-blue transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center mx-auto"
+            >
+                <span id="button-text">Generate Tip</span>
+                <div id="loading-spinner" class="hidden animate-spin rounded-full h-6 w-6 border-2 border-white border-t-transparent ml-3"></div>
+            </button>
+            <div id="earning-tip-output" class="mt-10 p-6 bg-white bg-opacity-90 rounded-xl shadow-inner text-text-dark text-lg italic leading-relaxed text-left hidden">
+                <!-- AI generated tip will appear here -->
+            </div>
+            <div id="error-message" class="mt-4 text-red-700 font-semibold hidden">
+                <!-- Error messages will appear here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid-page CTA -->
+    <section class="py-12 md:py-16 bg-primary-blue mx-4 md:mx-auto mt-8 max-w-6xl rounded-xl shadow-md text-center text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6">
+                Ready to transform your financial future?
+            </h2>
+            <a href="https://areyourealhuman.com/cl/i/kldnoq" class="inline-block bg-secondary-teal text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-cta-hover-teal transition duration-300 ease-in-out transform hover:scale-105">
+                Get Started Today!
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-white rounded-xl shadow-md mx-4 md:mx-auto mt-8 max-w-6xl">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-text-dark mb-12">
+                What Our Users Say
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-bg-light p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <div class="flex items-center mb-4"> <!-- Added margin-bottom for spacing -->
+                        <img src="https://placehold.co/40x40/A78BFA/ffffff?text=U1" alt="User Avatar" class="w-10 h-10 rounded-full mr-3 border-2 border-accent-purple">
+                        <div>
+                            <p class="font-semibold text-primary-blue">@emma***</p>
+                            <p class="text-sm text-text-muted">United States</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-text-dark italic leading-relaxed">
+                        "I was skeptical at first, but this system genuinely works! I've seen consistent earnings since I started a month ago. Highly recommend!"
+                    </p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-bg-light p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <div class="flex items-center mb-4"> <!-- Added margin-bottom for spacing -->
+                        <img src="https://placehold.co/40x40/2DD4BF/ffffff?text=U2" alt="User Avatar" class="w-10 h-10 rounded-full mr-3 border-2 border-secondary-teal">
+                        <div>
+                            <p class="font-semibold text-primary-blue">@mike***</p>
+                            <p class="text-sm text-text-muted">United Kingdom</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-text-dark italic leading-relaxed">
+                        "Finally, something that isn't a scam! The setup was simple, and the results are real. My daily income is steadily increasing."
+                    </p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-bg-light p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <div class="flex items-center mb-4"> <!-- Added margin-bottom for spacing -->
+                        <img src="https://placehold.co/40x40/3B82F6/ffffff?text=U3" alt="User Avatar" class="w-10 h-10 rounded-full mr-3 border-2 border-primary-blue">
+                        <div>
+                            <p class="font-semibold text-primary-blue">@chloe***</p>
+                            <p class="text-sm text-text-muted">Canada</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-text-dark italic leading-relaxed">
+                        "As a busy professional, I needed something passive. This system delivers! It's truly set-and-forget, and the income is a great bonus."
+                    </p>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="bg-bg-light p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <div class="flex items-center mb-4"> <!-- Added margin-bottom for spacing -->
+                        <img src="https://placehold.co/40x40/60A5FA/ffffff?text=U4" alt="User Avatar" class="w-10 h-10 rounded-full mr-3 border-2 border-primary-blue">
+                        <div>
+                            <p class="font-semibold text-primary-blue">@liam***</p>
+                            <p class="text-sm text-text-muted">Australia</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-text-dark italic leading-relaxed">
+                        "I've tried numerous online opportunities, but this is the first one where I've actually seen consistent returns. Highly impressed with the support."
+                    </p>
+                </div>
+                <!-- Testimonial 5 -->
+                <div class="bg-bg-light p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <div class="flex items-center mb-4"> <!-- Added margin-bottom for spacing -->
+                        <img src="https://placehold.co/40x40/A78BFA/ffffff?text=U5" alt="User Avatar" class="w-10 h-10 rounded-full mr-3 border-2 border-accent-purple">
+                        <div>
+                            <p class="font-semibold text-primary-blue">@sophia***</p>
+                            <p class="text-sm text-text-muted">United States</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-text-dark italic leading-relaxed">
+                        "Game changer! This system has allowed me to supplement my income without taking up much of my time. It's truly passive."
+                    </p>
+                </div>
+                <!-- Testimonial 6 -->
+                <div class="bg-bg-light p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <div class="flex items-center mb-4"> <!-- Added margin-bottom for spacing -->
+                        <img src="https://placehold.co/40x40/2DD4BF/ffffff?text=U6" alt="User Avatar" class="w-10 h-10 rounded-full mr-3 border-2 border-secondary-teal">
+                        <div>
+                            <p class="font-semibold text-primary-blue">@david***</p>
+                            <p class="text-sm text-text-muted">United Kingdom</p>
+                        </div>
+                    </div>
+                    <p class="text-lg text-text-dark italic leading-relaxed">
+                        "I'm so glad I found this. It's legitimate, easy to use, and most importantly, it delivers results. No more guessing games!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPORTANT MESSAGE SECTION -->
+    <section class="py-12 md:py-16 bg-bg-light mx-4 md:mx-auto mt-8 max-w-6xl rounded-xl shadow-md text-center text-text-dark">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-primary-blue">
+                ملاحظة هامة للحصول على موقع جني المال:
+            </h3>
+            <p class="text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto text-text-muted">
+                للوصول إلى الموقع الذي سيمكنك من البدء في جني الأرباح، يرجى إتمام إحدى المهام البسيطة التي ستظهر لك بعد النقر على زر "ابدأ الآن". هذه خطوة ضرورية لضمان حصولك على أفضل تجربة ممكنة.
+                <br><br>
+                نتطلع لمساعدتك في رحلتك نحو النجاح المالي!
+            </p>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-secondary-teal to-primary-blue mx-4 md:mx-auto my-8 max-w-6xl rounded-xl shadow-xl text-center text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+                Don't Miss Out on This Opportunity!
+            </h2>
+            <p class="text-lg sm:text-xl font-light mb-8 max-w-2xl mx-auto opacity-90">
+                Join hundreds of successful users who are already benefiting from our revolutionary online earning system.
+            </p>
+            <a href="https://areyourealhuman.com/cl/i/kldnoq" class="inline-block bg-accent-purple text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105">
+                Secure Your Spot Now!
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark text-white py-10 rounded-t-3xl shadow-lg">
+        <div class="container mx-auto px-6 text-center text-sm md:text-base">
+            <p class="mb-4 leading-relaxed opacity-80 max-w-3xl mx-auto">
+                <span class="font-bold">Disclaimer:</span> Earnings are not guaranteed and depend on individual effort, market conditions, and other factors. Results may vary. This is not a get-rich-quick scheme.
+            </p>
+            <!-- Updated Footer with Website Name -->
+            <p class="opacity-70">
+                &copy; 2024 ilyas aaddar. All rights reserved. | <a href="#" class="underline hover:text-secondary-teal transition duration-200">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Notification Popups Container - Changed to top-right -->
+    <div id="notification-container" class="fixed top-4 right-4 z-50 flex flex-col items-end space-y-4">
+        <!-- Popups will be inserted here by JavaScript -->
+    </div>
+
+    <script>
+        // Array of notification messages with masked usernames and earnings
+        const notificationMessages = [
+            "@josh*** earned $50 in 3 days!",
+            "@sarah*** just made $120 today!",
+            "@chris*** received $75 in 2 days!",
+            "@anna*** earned $90 this morning!",
+            "@daniel*** got $60 from the system!",
+            "@olivia*** made $150 this week!",
+            "@james*** earned $80 yesterday!",
+            "@emily*** just got $100!",
+        ];
+
+        // Function to create and display a new notification popup
+        function showNotification() {
+            const container = document.getElementById('notification-container');
+            if (!container) return; // Ensure container exists
+
+            // Pick a random message
+            const randomIndex = Math.floor(Math.random() * notificationMessages.length);
+            const message = notificationMessages[randomIndex];
+
+            // Create the notification element
+            const notification = document.createElement('div');
+            notification.className = 'notification bg-white p-4 rounded-lg shadow-xl text-text-dark flex items-center space-x-3 opacity-0 animate-slideIn';
+            notification.style.minWidth = '250px'; // Ensure sufficient width
+            notification.style.maxWidth = '300px'; // Prevent excessively wide popups
+
+            // Add a small icon to the notification
+            const icon = document.createElement('div');
+            icon.className = 'w-6 h-6 flex-shrink-0';
+            icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign">
+                                <line x1="12" y1="1" x2="12" y2="23"/>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                              </svg>`;
+            
+            // Add the message text
+            const text = document.createElement('span');
+            text.textContent = message;
+
+            notification.appendChild(icon);
+            notification.appendChild(text);
+            container.appendChild(notification);
+
+            // Automatically remove the notification after a delay (e.g., 8 seconds)
+            setTimeout(() => {
+                notification.classList.remove('animate-slideIn');
+                notification.classList.add('animate-slideOut'); // Trigger slide-out animation
+
+                // Remove from DOM after animation completes
+                notification.addEventListener('animationend', () => {
+                    notification.remove();
+                }, { once: true }); // Ensure listener is removed after one execution
+            }, 8000); // Popup stays for 8 seconds before sliding out
+        }
+
+        // Start showing notifications every 10-15 seconds (random interval)
+        function startNotificationLoop() {
+            // Initial delay before the first notification
+            setTimeout(() => {
+                showNotification();
+                // Set interval for subsequent notifications with random delay
+                setInterval(() => {
+                    const delay = Math.random() * (15000 - 10000) + 10000; // Random delay between 10 to 15 seconds
+                    showNotification();
+                }, delay);
+            }, 5000); // First notification appears after 5 seconds
+        }
+
+        // --- Gemini API Integration for Personalized Tip ---
+        const earningTipInput = document.getElementById('earning-tip-input');
+        const generateTipBtn = document.getElementById('generate-tip-btn');
+        const earningTipOutput = document.getElementById('earning-tip-output');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const buttonText = document.getElementById('button-text');
+        const errorMessage = document.getElementById('error-message');
+
+        generateTipBtn.addEventListener('click', async () => {
+            const userInput = earningTipInput.value.trim();
+            if (!userInput) {
+                errorMessage.textContent = "Please tell us a little about your interests or time to get a tip!";
+                errorMessage.classList.remove('hidden');
+                earningTipOutput.classList.add('hidden'); // Hide previous output
+                return;
+            }
+
+            // Show loading state
+            buttonText.textContent = "Generating...";
+            loadingSpinner.classList.remove('hidden');
+            generateTipBtn.disabled = true; // Disable button during generation
+            earningTipOutput.classList.add('hidden'); // Hide previous output
+            errorMessage.classList.add('hidden'); // Hide any previous error message
+            earningTipOutput.textContent = ''; // Clear previous output
+
+            try {
+                let chatHistory = [];
+                const prompt = `Generate a concise, actionable online earning tip for someone who says: "${userInput}". The tip should be realistic and encouraging, suitable for someone looking to make money online in Tier-1 countries. Keep it under 100 words.`;
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Canvas will provide this key at runtime
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    earningTipOutput.textContent = text;
+                    earningTipOutput.classList.remove('hidden'); // Show the output
+                } else {
+                    errorMessage.textContent = "Sorry, I couldn't generate a tip. Please try again with a different input.";
+                    errorMessage.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error("Error generating tip:", error);
+                errorMessage.textContent = "An error occurred while generating your tip. Please try again later.";
+                errorMessage.classList.remove('hidden');
+            } finally {
+                // Hide loading state
+                buttonText.textContent = "Generate Tip";
+                loadingSpinner.classList.add('hidden');
+                generateTipBtn.disabled = false; // Re-enable button
+            }
+        });
+
+        // Ensure the DOM is fully loaded before starting the notification loop
+        document.addEventListener('DOMContentLoaded', startNotificationLoop);
+    </script>
+</body>
+</html>
