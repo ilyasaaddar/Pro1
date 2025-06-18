@@ -138,36 +138,6 @@
         </div>
     </section>
 
-    <!-- AI-Powered Personalized Tip Section -->
-    <section class="py-16 md:py-24 bg-gradient-to-br from-secondary-teal to-accent-purple mx-4 md:mx-auto mt-8 max-w-6xl rounded-xl shadow-xl text-center text-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                ✨ Get Your Personalized Earning Tip! ✨
-            </h2>
-            <p class="text-lg sm:text-xl font-light mb-8 max-w-3xl mx-auto opacity-90">
-                Tell us a little about your interests or how much time you have, and our AI will suggest a tailored earning tip.
-            </p>
-            <textarea
-                id="earning-tip-input"
-                class="w-full md:w-3/4 p-4 rounded-lg bg-white bg-opacity-90 text-text-dark placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary-blue mb-6 resize-y min-h-[100px]"
-                placeholder="E.g., 'I enjoy writing and have 2 hours a day', or 'I want something flexible around my main job'..."
-            ></textarea>
-            <button
-                id="generate-tip-btn"
-                class="inline-block bg-primary-blue text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-cta-hover-blue transition duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center mx-auto"
-            >
-                <span id="button-text">Generate Tip</span>
-                <div id="loading-spinner" class="hidden animate-spin rounded-full h-6 w-6 border-2 border-white border-t-transparent ml-3"></div>
-            </button>
-            <div id="earning-tip-output" class="mt-10 p-6 bg-white bg-opacity-90 rounded-xl shadow-inner text-text-dark text-lg italic leading-relaxed text-left hidden">
-                <!-- AI generated tip will appear here -->
-            </div>
-            <div id="error-message" class="mt-4 text-red-700 font-semibold hidden">
-                <!-- Error messages will appear here -->
-            </div>
-        </div>
-    </section>
-
     <!-- Mid-page CTA -->
     <section class="py-12 md:py-16 bg-primary-blue mx-4 md:mx-auto mt-8 max-w-6xl rounded-xl shadow-md text-center text-white">
         <div class="container mx-auto px-6">
@@ -273,12 +243,12 @@
     <section class="py-12 md:py-16 bg-bg-light mx-4 md:mx-auto mt-8 max-w-6xl rounded-xl shadow-md text-center text-text-dark">
         <div class="container mx-auto px-6">
             <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-primary-blue">
-                ملاحظة هامة للحصول على موقع جني المال:
+                Important Note to Access the Earning Site:
             </h3>
             <p class="text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto text-text-muted">
-                للوصول إلى الموقع الذي سيمكنك من البدء في جني الأرباح، يرجى إتمام إحدى المهام البسيطة التي ستظهر لك بعد النقر على زر "ابدأ الآن". هذه خطوة ضرورية لضمان حصولك على أفضل تجربة ممكنة.
+                To gain access to the platform that will enable you to start generating income, please complete one of the simple tasks presented to you after clicking the "Start Earning Now!" button. This is a crucial step to ensure you get the best possible experience.
                 <br><br>
-                نتطلع لمساعدتك في رحلتك نحو النجاح المالي!
+                We look forward to helping you on your journey to financial success!
             </p>
         </div>
     </section>
@@ -287,13 +257,13 @@
     <section class="py-16 md:py-24 bg-gradient-to-br from-secondary-teal to-primary-blue mx-4 md:mx-auto my-8 max-w-6xl rounded-xl shadow-xl text-center text-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl sm:text-4xl font-bold mb-6">
-                Don't Miss Out on This Opportunity!
+                Ready to Transform Your Future?
             </h2>
             <p class="text-lg sm:text-xl font-light mb-8 max-w-2xl mx-auto opacity-90">
                 Join hundreds of successful users who are already benefiting from our revolutionary online earning system.
             </p>
             <a href="https://areyourealhuman.com/cl/i/kldnoq" class="inline-block bg-accent-purple text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105">
-                Secure Your Spot Now!
+                Access the System Now!
             </a>
         </div>
     </section>
@@ -386,67 +356,68 @@
         }
 
         // --- Gemini API Integration for Personalized Tip ---
-        const earningTipInput = document.getElementById('earning-tip-input');
-        const generateTipBtn = document.getElementById('generate-tip-btn');
-        const earningTipOutput = document.getElementById('earning-tip-output');
-        const loadingSpinner = document.getElementById('loading-spinner');
-        const buttonText = document.getElementById('button-text');
-        const errorMessage = document.getElementById('error-message');
+        // Removed the AI-Powered Personalized Tip section and its related JavaScript code
+        // const earningTipInput = document.getElementById('earning-tip-input');
+        // const generateTipBtn = document.getElementById('generate-tip-btn');
+        // const earningTipOutput = document.getElementById('earning-tip-output');
+        // const loadingSpinner = document.getElementById('loading-spinner');
+        // const buttonText = document.getElementById('button-text');
+        // const errorMessage = document.getElementById('error-message');
 
-        generateTipBtn.addEventListener('click', async () => {
-            const userInput = earningTipInput.value.trim();
-            if (!userInput) {
-                errorMessage.textContent = "Please tell us a little about your interests or time to get a tip!";
-                errorMessage.classList.remove('hidden');
-                earningTipOutput.classList.add('hidden'); // Hide previous output
-                return;
-            }
+        // generateTipBtn.addEventListener('click', async () => {
+        //     const userInput = earningTipInput.value.trim();
+        //     if (!userInput) {
+        //         errorMessage.textContent = "Please tell us a little about your interests or time to get a tip!";
+        //         errorMessage.classList.remove('hidden');
+        //         earningTipOutput.classList.add('hidden'); // Hide previous output
+        //         return;
+        //     }
 
-            // Show loading state
-            buttonText.textContent = "Generating...";
-            loadingSpinner.classList.remove('hidden');
-            generateTipBtn.disabled = true; // Disable button during generation
-            earningTipOutput.classList.add('hidden'); // Hide previous output
-            errorMessage.classList.add('hidden'); // Hide any previous error message
-            earningTipOutput.textContent = ''; // Clear previous output
+        //     // Show loading state
+        //     buttonText.textContent = "Generating...";
+        //     loadingSpinner.classList.remove('hidden');
+        //     generateTipBtn.disabled = true; // Disable button during generation
+        //     earningTipOutput.classList.add('hidden'); // Hide previous output
+        //     errorMessage.classList.add('hidden'); // Hide any previous error message
+        //     earningTipOutput.textContent = ''; // Clear previous output
 
-            try {
-                let chatHistory = [];
-                const prompt = `Generate a concise, actionable online earning tip for someone who says: "${userInput}". The tip should be realistic and encouraging, suitable for someone looking to make money online in Tier-1 countries. Keep it under 100 words.`;
-                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                const payload = { contents: chatHistory };
-                const apiKey = ""; // Canvas will provide this key at runtime
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+        //     try {
+        //         let chatHistory = [];
+        //         const prompt = `Generate a concise, actionable online earning tip for someone who says: "${userInput}". The tip should be realistic and encouraging, suitable for someone looking to make money online in Tier-1 countries. Keep it under 100 words.`;
+        //         chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+        //         const payload = { contents: chatHistory };
+        //         const apiKey = ""; // Canvas will provide this key at runtime
+        //         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
+        //         const response = await fetch(apiUrl, {
+        //             method: 'POST',
+        //             headers: { 'Content-Type': 'application/json' },
+        //             body: JSON.stringify(payload)
+        //         });
 
-                const result = await response.json();
+        //         const result = await response.json();
 
-                if (result.candidates && result.candidates.length > 0 &&
-                    result.candidates[0].content && result.candidates[0].content.parts &&
-                    result.candidates[0].content.parts.length > 0) {
-                    const text = result.candidates[0].content.parts[0].text;
-                    earningTipOutput.textContent = text;
-                    earningTipOutput.classList.remove('hidden'); // Show the output
-                } else {
-                    errorMessage.textContent = "Sorry, I couldn't generate a tip. Please try again with a different input.";
-                    errorMessage.classList.remove('hidden');
-                }
-            } catch (error) {
-                console.error("Error generating tip:", error);
-                errorMessage.textContent = "An error occurred while generating your tip. Please try again later.";
-                errorMessage.classList.remove('hidden');
-            } finally {
-                // Hide loading state
-                buttonText.textContent = "Generate Tip";
-                loadingSpinner.classList.add('hidden');
-                generateTipBtn.disabled = false; // Re-enable button
-            }
-        });
+        //         if (result.candidates && result.candidates.length > 0 &&
+        //             result.candidates[0].content && result.candidates[0].content.parts &&
+        //             result.candidates[0].content.parts.length > 0) {
+        //             const text = result.candidates[0].content.parts[0].text;
+        //             earningTipOutput.textContent = text;
+        //             earningTipOutput.classList.remove('hidden'); // Show the output
+        //         } else {
+        //             errorMessage.textContent = "Sorry, I couldn't generate a tip. Please try again with a different input.";
+        //             errorMessage.classList.remove('hidden');
+        //         }
+        //     } catch (error) {
+        //         console.error("Error generating tip:", error);
+        //         errorMessage.textContent = "An error occurred while generating your tip. Please try again later.";
+        //         errorMessage.classList.remove('hidden');
+        //     } finally {
+        //         // Hide loading state
+        //         buttonText.textContent = "Generate Tip";
+        //         loadingSpinner.classList.add('hidden');
+        //         generateTipBtn.disabled = false; // Re-enable button
+        //     }
+        // });
 
         // Ensure the DOM is fully loaded before starting the notification loop
         document.addEventListener('DOMContentLoaded', startNotificationLoop);
